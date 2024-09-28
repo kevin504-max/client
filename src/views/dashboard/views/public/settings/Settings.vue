@@ -16,33 +16,15 @@
 
         <n-spin 
           size="large"
-          v-show="!currentUser || !currentCompany || !currentCompany.business_client_plan || !oportunitiesByCompany" 
+          v-show="true" 
         />
-        
-        <!-- Plano do usuário -->
-        <n-space vertical class="user-config-plano" v-if="currentCompany && currentCompany.business_client_plan && oportunitiesByCompany">
-          <n-text strong>{{ currentCompany.business_client_plan.name }}</n-text>
-          <n-text>
-            {{ t('pages.settings.meetings_proportion', { total: oportunitiesByCompany.total, avg: currentCompany.business_client_plan.credits }) }}
-          </n-text>
-          <n-progress type="line" :percentage="Math.round((oportunitiesByCompany?.total / currentCompany.business_client_plan?.credits) * 100)" show-indicator />
-        </n-space>
-
-        <!-- Informações da empresa -->
-        <n-card :title="t('pages.settings.company_info.title')" v-if="currentCompany">
-            <n-space vertical>
-                <n-text strong>{{ t('pages.settings.company_info.name') }} {{ currentCompany.name }}</n-text>
-                <n-text strong>{{ t('pages.settings.company_info.phone') }} {{ currentCompany.phone }}</n-text>
-                <n-text strong>{{ t('pages.settings.company_info.cnpj') }} {{ currentCompany.cnpj }}</n-text>
-            </n-space>
-        </n-card>
 
         <!-- Alteração de informações pessoais -->
         <n-space vertical>
           <n-input label="Nome" v-model:value="userName" placeholder="Nome" />
           <n-input label="E-mail" v-model:value="userEmail" placeholder="Email" />
           <!-- Senha -->
-          <n-button type="info" ghost icon="lock" @click="handleResetPassword">
+          <n-button type="info" ghost icon="lock" @click="console.log('Alterar senha')">
             {{ t('pages.settings.reset_password') }}
           </n-button>
 
@@ -62,7 +44,7 @@
       style="width: 50%"
       :positive-text="t('pages.settings.modal_confirm')"
       :negative-text="t('pages.settings.modal_cancel')"
-      @positive-click="handleUpdateUserInfos"
+      @positive-click="showModal = false"
       @negative-click="showModal = false"
     >
       <n-space vertical>
@@ -77,13 +59,12 @@
 </template>
 
 <script setup>
-import { inject, ref, watch } from 'vue';
+import { inject, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
-import { toast } from 'vue3-toastify';
 
 const { t } = useI18n();
 
-const { currentUser, currentCompany, fetchOportunitiesByCompany, updateUserInfos } = inject('dashboard');
+const { currentUser } = inject('dashboard');
 
 const showModal = ref(false);
 
