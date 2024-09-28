@@ -1,0 +1,17 @@
+export default {
+    title: 'Authentication',
+    login: 'Login',
+    signup: 'Sign Up',
+    reset_password: 'Reset Password',
+    email: 'Email',
+    password: 'Password',
+    email_placeholder: 'Enter your email',
+    password_placeholder: 'Enter your password',
+    forgot_password: 'Forgot your password?',
+    login_success: 'Login successful!',
+    signup_success: 'Sign-up successful! Check your email for confirmation.',
+    reset_success: 'Password reset email sent! Check your inbox.',
+    login_error: 'Error during login: {message}',
+    signup_error: 'Error during sign-up: {message}',
+    reset_error: 'Error during password reset: {message}',
+};

@@ -1,0 +1,17 @@
+export default {
+    title: 'Autenticación',
+    login: 'Iniciar sesión',
+    signup: 'Registrarse',
+    reset_password: 'Restablecer contraseña',
+    email: 'Correo electrónico',
+    password: 'Contraseña',
+    email_placeholder: 'Introduce tu correo electrónico',
+    password_placeholder: 'Introduce tu contraseña',
+    forgot_password: '¿Olvidaste tu contraseña?',
+    login_success: '¡Inicio de sesión exitoso!',
+    signup_success: '¡Registro exitoso! Revisa tu correo para la confirmación.',
+    reset_success: '¡Correo de restablecimiento de contraseña enviado! Revisa tu bandeja de entrada.',
+    login_error: 'Error al iniciar sesión: {message}',
+    signup_error: 'Error durante el registro: {message}',
+    reset_error: 'Error al restablecer la contraseña: {message}',
+};
