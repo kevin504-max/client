@@ -261,7 +261,8 @@ const useDashboard = () => {
                 headers: HEADERS,
             });
 
-            return donations;
+            const donationsOrderedByDate = donations.sort((a, b) => new Date(b.data) - new Date(a.data));
+            return donationsOrderedByDate;
         } catch (error) {
             console.error('useDashboard:fetchDonations Error fetching donations: ', error);
         }

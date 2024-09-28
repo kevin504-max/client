@@ -5,6 +5,8 @@ export default {
     dashboard: 'Tablero',
     settings: 'Configuraciones',
  
+    collection_locations: 'Lugares de Donación',
+    donations: 'Donaciones',
     states: 'Estados',
     cities: 'Ciudades',
     types: 'Tipos de Sangre',

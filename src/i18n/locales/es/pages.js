@@ -197,6 +197,46 @@ export default {
             },
             empty: 'No se encontraron ciudades',
             showing: 'Mostrando {count} de {total} ciudades',
-        }
+        },
+        blood_donations: {
+            title: 'Donaciones de Sangre',
+            search: 'Buscar',
+            add: 'Nueva Donación',
+            fields: {
+                user: 'Usuario',
+                type: 'Tipo',
+                date: 'Fecha',
+                actions: 'Acciones',
+            },
+            modals: {
+                register: {
+                    title: 'Registrar Donación',
+                    confirm: 'Registrar',
+                    cancel: 'Cancelar',
+
+                    success: 'Donación registrada con éxito',
+                    error: '¡Error al registrar la donación! Inténtalo de nuevo.',
+                },
+                update: {
+                    title: 'Actualizar Donación',
+                    confirm: 'Actualizar',
+                    cancel: 'Cancelar',
+
+                    success: 'Donación actualizada con éxito',
+                    error: '¡Error al actualizar la donación! Inténtalo de nuevo.',
+                },
+                remove: {
+                    title: 'Eliminar Donación',
+                    confirm: 'Eliminar',
+                    cancel: 'Cancelar',
+                    content: '¿Realmente deseas eliminar la donación de {name}? Esta acción no podrá deshacerse.',
+
+                    success: 'Donación eliminada con éxito',
+                    error: '¡Error al eliminar la donación! Inténtalo de nuevo.',
+                }
+            },
+            empty: 'No se encontraron donaciones',
+            showing: 'Mostrando {count} de {total} donaciones',
+        },
     }
 };
