@@ -9,16 +9,16 @@ export default {
             last_month: 'Last Month',
         },
         
-        meetings: 'Meetings',
-        meetings_count: 'Scheduled Meetings',
-        meetings_proportion: '{total} of {avg} meetings',
+        meetings: 'Donations',
+        meetings_count: 'Scheduled Donations',
+        meetings_proportion: '{total} of {avg} donations',
         meetings_description: 'Your current results compared to companies in the same sector are: Above the target',
         
-        last_contacts: 'Last Contacts',
+        last_contacts: 'Last Donations',
     },
     settings: {
         title: 'Account Settings',
-        meetings_proportion: '{total} of {avg} scheduled meetings',
+        meetings_proportion: '{total} of {avg} scheduled donations',
         company_info: {
             title: 'Company Information',
             name: 'Name: ',

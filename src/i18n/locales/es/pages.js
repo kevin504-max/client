@@ -14,7 +14,7 @@ export default {
         meetings_proportion: '{total} de {avg} donaciones',
         meetings_description: 'Tu resultado actual comparado con sistemas del mismo sector es: Por encima de la meta',
         
-        last_contacts: 'Últimos Contactos',
+        last_contacts: 'Últimas Donaciones',
     },
     settings: {
         title: 'Configuraciones de la Cuenta',
