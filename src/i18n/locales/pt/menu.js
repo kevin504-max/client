@@ -1,4 +1,6 @@
 export default {
+    logo_text: 'Doe Sangue Doe Vida',
+
     light_theme: 'Tema Claro',
     dark_theme: 'Tema Escuro',
 

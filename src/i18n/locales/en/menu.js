@@ -1,4 +1,6 @@
 export default {
+    logo_text: 'Donate Blood Save Lives',
+
     light_theme: 'Light Theme',
     dark_theme: 'Dark Theme',
 
