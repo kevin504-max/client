@@ -110,7 +110,7 @@ const { locale, fetchedDonations } = inject('dashboard');
 const currentPage = ref(1);
 const pageSize = ref(5);
 
-const paginatedDonations = computed(() => {
+const paginatedDonations = computed(async () => {
   const start = (currentPage.value - 1) * pageSize.value;
   const end = start + pageSize.value;
   
